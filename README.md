@@ -1,4 +1,4 @@
-# Project-1---Track-Ball
+# Project-1---Trace-Ball
 ## Max Core Value: 5000
 ## Required language: Jscript
 ### High-level Description:
