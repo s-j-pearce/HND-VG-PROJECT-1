@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <title>Trace Ball</title>
+  <style>
+    canvas {
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		border: 5px solid #000000;
+		background-color: #ffffff;
+    }
+ 
+    body {
+		background-color: #aaaaaa;
+		font-family: 'Arial';
+		font-size: 10px;
+		padding: 0px 0px 0px 0px;
+		margin: 0px 0px 0px 0px;
+    }
+  </style>
+</head>
+ 
+<body>
+  <canvas id="myCanvas" width="500px" height="500px"></canvas>
+ 
+  <script>
+  
+			//Find Mouse Position
+			
+			var canvas = document.querySelector("#myCanvas");
+			var context = canvas.getContext("2d");
+						
+			var canvasPos = getPosition(canvas);
+			var mouseX = 0;
+			var mouseY = 0;
+			var sqSize = 50;
+			var xPos = 0;
+			var yPos = 0;
+			var dX = 0;
+			var dY = 0;
+					 
+			canvas.addEventListener("mousemove", setMousePosition, false);
+			
+			// Test for collision between an object and a point
+			function contains(targetA, targetB) {
+			return !(targetB.x > (targetA.x + targetA.width) || 
+			   (targetB.x + targetB.width) < targetA.x || 
+			   targetB.y > (targetA.x + targetA.height) ||
+			   (targetB.y + targetB.height) < targetA.y);
+			}
+			
+			//Track mouse position
+					 
+			function setMousePosition(e) {
+			mouseX = e.clientX - canvasPos.x;
+			mouseY = e.clientY - canvasPos.y;
+			}       
+			
+			//Generate the player and NPC on screen and make it follow the mouse
+			
+			function update() {
+				dX = mouseX - xPos;
+				dY = mouseY - yPos;
+ 
+				xPos += (dX / 30);
+				yPos += (dY / 30);
+			
+			//Stops the characters from drawing infinitely
+		
+			context.clearRect(0, 0, canvas.width, canvas.height);
+			
+			// detect a collision
+			var collision = contains(object1, object2);
+			
+			//Generate NPC
+			
+			context.id="NPC"
+			context.fillStyle = "#ff0000";
+			context.fillRect(xPos - sqSize / 2, yPos - sqSize / 2, sqSize, sqSize);
+				
+			//Draw the player and follow the mouse
+			
+			context.id="Mouse"
+			context.beginPath();
+			context.fillStyle = collision ? "red" : "green";;
+			context.fillRect(mouseX - 12.5, mouseY - 12.5, 25, 25);
+			context.fill();
+			
+			requestAnimationFrame(update);
+			}
+			
+	  
+			//Starts the function
+			
+			update();
+			
+			//
+		
+			function getPosition(el) {
+			var xPosition = 0;
+			var yPosition = 0;
+			 
+			while (el) {
+			xPosition += (el.offsetLeft - el.scrollLeft + el.clientLeft);
+			yPosition += (el.offsetTop - el.scrollTop + el.clientTop);
+			el = el.offsetParent;
+			}
+			return {
+			x: xPosition,
+			y: yPosition
+			};
+			}   
+			
+			
+  </script>
+ 
+</body>
+ 
+</html>
