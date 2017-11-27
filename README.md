@@ -1,14 +1,14 @@
-## PROJECT-1-TRACEBALL
+# PROJECT-1-TRACEBALL
 
-# Game Description
+## Game Description
 
-# User Stories
+## User Stories
 
-# Flow Chart
+## Flow Chart
 
-# Product Backlog:
+## Product Backlog:
 
-# High Level Function Requirements
+## High Level Function Requirements
 
 * Create Canvas
 * Create 2 dimensional character
@@ -19,14 +19,14 @@
 * Collision detection and display
 * Start and stop game
 
-# High Level Non-Functional Requirements
+## High Level Non-Functional Requirements
 
 * Canvas Colour
 * Character and NPC shape
 * Player and NPC colour
 * Canvas size
 
-# Sprint Backlog
+## Sprint Backlog
 
 * As a user I would like to play the game in my browser (cross platform)
 * As a user I would like to play the game multiple times (New game button)
@@ -36,12 +36,14 @@
 * As a user I would like to know when I have won/lost the game
 * As a user I would like to change the difficulty of the game to challenge myself
 
-# Design Documentation:
+## Design Documentation:
 
-# Process of Implementation
+## Process of Implementation
 
-# IDE used and Features
+## IDE used and Features
 
-# Debugging Process
+## Debugging Process
 
-# Coding Standards
+## Coding Standards
+
+## Evaluation
