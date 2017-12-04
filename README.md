@@ -17,9 +17,9 @@ The player will control a square by moving their mouse cursor within the game wi
 
 ### High Level Function Requirements
 
-* Create Canvas
+* Create Canvas(500pixels x 500pixels)
 * Create 2 dimensional character
-* Create NPC
+* Create a non-playing character NPC
 * User mouse movement moves character
 * Have NPC move to player position
 * Character stays within Canvas
