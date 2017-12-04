@@ -10,9 +10,10 @@ The player will control a square by moving their mouse cursor within the game wi
 5. As a player I'd want the NPC to follow my character
 6. As a user I would like to be able to see both characters
 
-## Flow Chart
+## Flow Chart:
 ![trace-ball-flow-chart](https://user-images.githubusercontent.com/31927590/33268885-b42e75b0-d376-11e7-9e28-870bbc7c0def.PNG)
-
+## Gant Chart:
+![capture](https://user-images.githubusercontent.com/31927590/33561443-8abeee78-d90a-11e7-9d87-4bb57bb55dcd.PNG)
 ## Product Backlog:
 
 ### High Level Function Requirements
