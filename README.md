@@ -50,10 +50,10 @@ When i was writing my code i made sure to always correctly comment any lines of 
 ##### Below is an example from my code where i use Comments:
 ```javascript
 //draw co-ordinates of text
-	context.fillStyle = "Red"; //makes the text red
-	context.font="18px sans-serif"; //defines the font and the size
-	context.fillText("Mouse ("+mouseX+","+mouseY+")", 10, 20); 
-	context.fillText("Lives = ("+lives+")", 180, 20);
+context.fillStyle = "Red"; //makes the text red
+context.font="18px sans-serif"; //defines the font and the size
+context.fillText("Mouse ("+mouseX+","+mouseY+")", 10, 20); 
+context.fillText("Lives = ("+lives+")", 180, 20);
 ```
 ### Indentation:
 During the coding process of making my game i made sure to consistently indent, it not only helped when going through the code to make and changes and fixing problems but it also helps to identify loops as well as conveying the structure of the code.
@@ -91,6 +91,22 @@ function onTimerTick() {
 	context.fillStyle =  collision ? "red" : "green"; 
 	context.fillRect(object1.x,object1.y,object1.width,object1.height); 
 			}
+```
+### Characters per line:
+The maximum amount of characters that are recommended for java is 80. Luckily throughout the coding process this never caused any problems.
+### Naming:
+The last standard that i focused on whilst developing my code was naming. This was a main focus when creating my variable names. I needed to make sure that the variable games were unique so that i was able to identify what each one was for as well as so they did not interfere with any lines of code.
+##### Below is an example in my code where i named my variables:
+```javascript
+var lives = 3; 
+				
+	canvas.width = canvas.width; 
+			
+	var object1 = {x:mouseX - 25, y:mouseY - 25, width:50, height:50 }; 
+	var object2 = {x:xPos - sqSize / 2, y:yPos - sqSize / 2, width:sqSize, height:sqSize }; 
+	
+	// detect a collision
+	var collision = contains(object1, object2);
 ```
 ## Evaluation
 Overall I feel that as this was my first time coding an interactive 'game' styled program it went very well. I learnt have to diagnose simple coding errors/mistakes as well as pick up simple terminology whilst being able to implement it into my code. although i did not comment on my code as much as was recommended I felt that I was able to understand everything and understand what each line of code did as well as its importance.
