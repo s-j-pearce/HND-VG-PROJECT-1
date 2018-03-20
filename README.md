@@ -60,37 +60,36 @@ During the coding process of making my game i made sure to consistently indent, 
 ##### Below is an example from my code where i use Indentations:
 ```javascript
 function onTimerTick() { 
-			
-				dX = mouseX - xPos; 
-				dY = mouseY - yPos; 
+	dX = mouseX - xPos; 
+	dY = mouseY - yPos; 
  
-				xPos += (dX / 32); 
-				yPos += (dY / 32); 
+	xPos += (dX / 32); 
+	yPos += (dY / 32); 
 			
-				var lives = 3; 
+	var lives = 3; 
 				
-				canvas.width = canvas.width; 
+	canvas.width = canvas.width; 
 			
-				var object1 = {x:mouseX - 25, y:mouseY - 25, width:50, height:50 }; 
-				var object2 = {x:xPos - sqSize / 2, y:yPos - sqSize / 2, width:sqSize, height:sqSize }; 
-			
-				// detect a collision
-				var collision = contains(object1, object2); 
+	var object1 = {x:mouseX - 25, y:mouseY - 25, width:50, height:50 }; 
+	var object2 = {x:xPos - sqSize / 2, y:yPos - sqSize / 2, width:sqSize, height:sqSize }; 
+	
+	// detect a collision
+	var collision = contains(object1, object2); 
 				
-				//draw co-ordinates of text
-				context.fillStyle = "Red"; //makes the text red
-				context.font="18px sans-serif"; //defines the font and the size
-				context.fillText("Mouse ("+mouseX+","+mouseY+")", 10, 20); 
-				context.fillText("Lives = ("+lives+")", 180, 20); 
+	//draw co-ordinates of text
+	context.fillStyle = "Red"; //makes the text red
+	context.font="18px sans-serif"; //defines the font and the size
+	context.fillText("Mouse ("+mouseX+","+mouseY+")", 10, 20); 
+	context.fillText("Lives = ("+lives+")", 180, 20); 
 				
 				
-				//Draw the NPC and follow the mouse indirectly
-				context.fillStyle = "#FF0000"; //makes the color of this object red
-				context.fillRect(object2.x,object2.y,object2.width,object2.height); 
+	//Draw the NPC and follow the mouse indirectly
+	context.fillStyle = "#FF0000"; //makes the color of this object red
+	context.fillRect(object2.x,object2.y,object2.width,object2.height); 
 	 
-				//Draw the player and follow the mouse
-				context.fillStyle =  collision ? "red" : "green"; 
-				context.fillRect(object1.x,object1.y,object1.width,object1.height); 
+	//Draw the player and follow the mouse
+	context.fillStyle =  collision ? "red" : "green"; 
+	context.fillRect(object1.x,object1.y,object1.width,object1.height); 
 			}
 ```
 ## Evaluation
