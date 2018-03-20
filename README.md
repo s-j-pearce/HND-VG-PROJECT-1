@@ -100,13 +100,13 @@ The last standard that i focused on whilst developing my code was naming. This w
 ```javascript
 var lives = 3; 
 				
-	canvas.width = canvas.width; 
+canvas.width = canvas.width; 
 			
-	var object1 = {x:mouseX - 25, y:mouseY - 25, width:50, height:50 }; 
-	var object2 = {x:xPos - sqSize / 2, y:yPos - sqSize / 2, width:sqSize, height:sqSize }; 
+var object1 = {x:mouseX - 25, y:mouseY - 25, width:50, height:50 }; 
+var object2 = {x:xPos - sqSize / 2, y:yPos - sqSize / 2, width:sqSize, height:sqSize }; 
 	
-	// detect a collision
-	var collision = contains(object1, object2);
+// detect a collision
+var collision = contains(object1, object2);
 ```
 ## Evaluation
 Overall I feel that as this was my first time coding an interactive 'game' styled program it went very well. I learnt have to diagnose simple coding errors/mistakes as well as pick up simple terminology whilst being able to implement it into my code. although i did not comment on my code as much as was recommended I felt that I was able to understand everything and understand what each line of code did as well as its importance.
