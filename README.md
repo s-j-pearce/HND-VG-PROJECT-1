@@ -47,7 +47,7 @@ When we first started coding using notepad, we did not have an easy way of debug
 During the coding process, I made sure to constantly indent my code often so that I was able to identify the breaks in commands or even functions. it also means you don’t have to press space a lot to get the same affect. Throughout i also made sure to add comments where necessary in order to understand the code if i needed to come back to it. Curly brackets were also used to break up my code. I used appropriate variable names also so that i was able to quickly read and understand what variables did what.
 ### Commenting:
 When i was writing my code i made sure to always correctly comment any lines of code that i did not fully understand, this way i was able to come back to the code, read the comment and understand it again.
-Below is an example from my code where i use Comments:
+##### Below is an example from my code where i use Comments:
 ```javascript
 //draw co-ordinates of text
 	context.fillStyle = "Red"; //makes the text red
